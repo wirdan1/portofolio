@@ -1,78 +1,90 @@
-/* General Styles */
+/* Style Umum */
 body {
+    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+    background: #333;
+    padding: 10px;
     color: white;
-    text-align: center;
+    text-align: left;
+    position: relative;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.logo {
-    color: yellow;
-    font-size: 20px;
-}
-
-nav ul {
+#menu {
+    display: none;
+    background: #444;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
     list-style: none;
-    padding: 0;
-    display: flex;
 }
 
-nav ul li {
-    margin: 0 15px;
+#menu li {
+    margin: 5px 0;
 }
 
-nav ul li a {
-    text-decoration: none;
+#menu a {
     color: white;
-    font-size: 18px;
+    text-decoration: none;
 }
 
-nav ul li a.active {
-    border-bottom: 2px solid yellow;
+/* Section */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero Section */
-.hero {
-    margin-top: 50px;
-}
-
-.profile img {
+/* Profile Image */
+.profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid yellow;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid #333;
 }
 
-h2 {
-    font-size: 20px;
-    color: yellow;
+/* Form Input */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-h1 {
-    font-size: 40px;
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-.highlight {
-    color: yellow;
-    font-weight: bold;
+button:hover {
+    background: #218838;
 }
 
-p {
-    font-size: 18px;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 20px;
+/* Hasil Download */
+#result {
+    margin-top: 20px;
 }
