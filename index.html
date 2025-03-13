@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raol Mukarrozi - Portfolio</title>
+    <title>Portofolio | John Doe</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Raol Mukarrozi</h1>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
-        </nav>
-        <div class="icon">
-            <img src="github-icon.png" alt="GitHub">
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile">
-        </div>
-        <h2>Hello World, I'm</h2>
-        <h1>Raol Mukarrozi</h1>
-        <h3 class="highlight">Full-Stack Engineer</h3>
-        <p>Welcome to My personal website. 👋</p>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+            <li><a href="#" onclick="showSection('tiktok')">PLUGINS TIKTOK</a></li>
+            <li><a href="https://whatsapp.com/channel/0029VakezCJDp2Q68C61RH2C" target="_blank">Thanks Penyedia Scrape</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Selamat Datang di Portofolio Saya</h1>
+        <p>Saya adalah Danz, seorang Developer Web yang suka membuat proyek menarik.</p>
     </section>
 
-    <footer>
-        <p>© 2024 Raol Mukarrozi</p>
-    </footer>
+    <section id="profile" style="display: none;">
+        <h1>Tentang Saya</h1>
+        <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+        <p><strong>Nama:</strong> Danz</p>
+        <p><strong>Keahlian:</strong> Web Developer, JavaScript, HTML, CSS</p>
+        <p><strong>Email:</strong> danz124e@gmail.com</p>
+    </section>
+
+    <section id="tiktok" style="display: none;">
+        <h1>Download Video TikTok</h1>
+        <input type="text" id="urlInput" placeholder="Masukkan URL TikTok">
+        <button onclick="downloadTikTok()">Download</button>
+        <div id="result"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="tiktok.js"></script>
+
 </body>
 </html>
