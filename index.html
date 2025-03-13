@@ -3,43 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | John Doe</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Danz Developer - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <nav>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <ul id="menu">
-            <li><a href="#" onclick="showSection('home')">Home</a></li>
-            <li><a href="#" onclick="showSection('profile')">Profile</a></li>
-            <li><a href="#" onclick="showSection('tiktok')">PLUGINS TIKTOK</a></li>
-            <li><a href="https://whatsapp.com/channel/0029VakezCJDp2Q68C61RH2C" target="_blank">Thanks Penyedia Scrape</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-        <h1>Selamat Datang di Portofolio Saya</h1>
-        <p>Saya adalah Danz, seorang Developer Web yang suka membuat proyek menarik.</p>
+    <header class="fade-in">
+        <h1>Danz Developer</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Danz</a>
+            <a href="https://github.com/yourgithub" target="_blank">
+                <img src="github-logo.png" alt="GitHub" class="github-icon">
+            </a>
+        </nav>
+    </header>
+    
+    <section class="home fade-in">
+        <img src="Danz-profile.jpg" alt="Danz Developer" class="profile">
+        <h2>Full-Stack Engineer</h2>
+        <p>Selamat datang di website pribadi saya.</p>
     </section>
-
-    <section id="profile" style="display: none;">
-        <h1>Tentang Saya</h1>
-        <img src="profile.jpg" alt="Foto Profil" class="profile-img">
-        <p><strong>Nama:</strong> Danz</p>
-        <p><strong>Keahlian:</strong> Web Developer, JavaScript, HTML, CSS</p>
-        <p><strong>Email:</strong> danz124e@gmail.com</p>
-    </section>
-
-    <section id="tiktok" style="display: none;">
-        <h1>Download Video TikTok</h1>
-        <input type="text" id="urlInput" placeholder="Masukkan URL TikTok">
-        <button onclick="downloadTikTok()">Download</button>
-        <div id="result"></div>
-    </section>
-
-    <script src="script.js"></script>
-    <script src="tiktok.js"></script>
-
 </body>
 </html>
